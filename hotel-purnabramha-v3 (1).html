@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hotel Purnabramha, Kudal – Menu & Rooms</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F7EE;--surface:#FFFFFF;--ink:#112417;--muted:#5E6F63;--line:#DCE8D8;--leaf:#14532D;--leaf2:#1E7A43;--mint:#D9EFD3;--gold:#F2C94C;--chip:#E4F0DF;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1710;--surface:#15231A;--ink:#EAF4E8;--muted:#98AD9D;--line:#27392D;--leaf:#0F3E22;--leaf2:#6FCF8A;--mint:#1D3324;--chip:#203126;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1710;--surface:#15231A;--ink:#EAF4E8;--muted:#98AD9D;--line:#27392D;--leaf:#0F3E22;--leaf2:#6FCF8A;--mint:#1D3324;--chip:#203126;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 126px)}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.5 Figtree,system-ui,sans-serif;max-width:640px;margin:0 auto;padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0F3E22,#1E7A43);color:#F2FBEF;padding:30px 22px}
+.leaf{position:absolute;right:-24px;top:-10px;width:230px;opacity:.9}
+.seal{display:inline-flex;align-items:center;gap:8px;background:#F2FBEF;color:#0F3E22;font:700 12.5px Figtree,sans-serif;letter-spacing:.08em;padding:6px 12px 6px 8px;border-radius:99px;position:relative}
+.seal i{width:16px;height:16px;border:2px solid #1E9A4B;border-radius:3px;display:grid;place-items:center}.seal i::after{content:"";width:7px;height:7px;border-radius:50%;background:#1E9A4B}
+.hero h1{font:700 42px/1.05 'Playfair Display',Georgia,serif;margin:16px 0 8px;position:relative;max-width:260px}
+.hero p{opacity:.9;max-width:290px;position:relative}.hero .loc{margin-top:10px;font-size:14px;opacity:.78}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:7;background:var(--bg);padding:12px 22px 10px}
+.tabs::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:-1}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--chip);border-radius:14px;padding:4px}
+.seg button{border:0;background:none;color:var(--muted);font:700 15px Figtree,sans-serif;padding:11px;border-radius:11px;cursor:pointer}
+.seg button.on{background:var(--leaf);color:#F2FBEF}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--leaf2);outline-offset:2px}
+.view{display:none}.view.on{display:block}
+.stay{display:flex;align-items:center;gap:14px;margin:6px 22px 0;padding:14px 16px;background:var(--mint);border:1px solid var(--line);border-radius:16px}
+.stay b{display:block}.stay span{font-size:13.5px;color:var(--muted)}
+.stay button,.eat button{margin-left:auto;flex:none;border:0;background:var(--leaf);color:#F2FBEF;font:700 14px Figtree,sans-serif;padding:10px 16px;border-radius:10px;cursor:pointer}
+.search{padding:14px 22px 0}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);font:400 16px Figtree,sans-serif}
+.cats{position:sticky;top:calc(env(safe-area-inset-top,0px) + 66px);z-index:6;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:12px 22px;scrollbar-width:none;border-bottom:1px solid var(--line);margin-top:6px}
+.cats button{flex:none;border:0;background:var(--chip);color:var(--ink);font:500 14.5px Figtree,sans-serif;padding:8px 15px;border-radius:99px;cursor:pointer}
+.cats button.on{background:var(--leaf2);color:#fff}
+:root[data-theme="dark"] .cats button.on{color:#0C1710}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cats button.on{color:#0C1710}}
+section{padding:24px 22px 2px}
+h2{font:700 26px 'Playfair Display',Georgia,serif}.sub{color:var(--muted);font-size:14px;margin:2px 0 6px}
+section.chef{margin-top:14px;background:var(--mint);border-radius:20px;margin-left:12px;margin-right:12px;padding:20px 12px 6px}
+.item{display:flex;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}
+.dot{flex:none;width:14px;height:14px;border:2px solid #1E9A4B;border-radius:3px;display:grid;place-items:center}.dot::after{content:"";width:6px;height:6px;border-radius:50%;background:#1E9A4B}
+.info{flex:1;min-width:0}.nm{font-weight:700}.ds{color:var(--muted);font-size:14px}
+.tag{margin-left:6px;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:99px;white-space:nowrap;vertical-align:1px}
+.tag.chef{background:var(--gold);color:#112417}.tag.special{background:var(--leaf);color:#F2FBEF}
+.buy{display:flex;flex-direction:column;align-items:flex-end;gap:6px}.pr{font-weight:700}
+.add{border:2px solid var(--leaf);background:transparent;color:var(--leaf);font:700 14px Figtree,sans-serif;padding:4px 16px;border-radius:99px;cursor:pointer}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .add{border-color:var(--leaf2);color:var(--leaf2)}}
+:root[data-theme="dark"] .add{border-color:var(--leaf2);color:var(--leaf2)}
+.step{display:flex;align-items:center;background:var(--leaf);color:#F2FBEF;border-radius:99px}
+.step button{border:0;background:none;color:inherit;font:700 18px Figtree,sans-serif;width:32px;height:30px;cursor:pointer}.step span{min-width:18px;text-align:center;font-weight:700}
+.pad{padding:6px 22px 0}.pad .sub{margin-bottom:14px}
+.room{background:var(--surface);border:1px solid var(--line);border-radius:18px;margin-bottom:14px;overflow:hidden}
+.pic{height:92px;display:flex;align-items:flex-end;padding:12px 16px;color:#fff;font:700 12.5px Figtree,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.rb{padding:14px 16px 16px}.rb h3{font:700 20px 'Playfair Display',Georgia,serif}
+.am{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px}.am span{font-size:12px;background:var(--chip);padding:3px 10px;border-radius:99px}
+.rrow{display:flex;justify-content:space-between;align-items:center}.rate{font-weight:700;font-size:20px}.rate small{font-weight:400;font-size:13px;color:var(--muted)}
+.btn{border:0;background:var(--leaf);color:#F2FBEF;font:700 14px Figtree,sans-serif;padding:10px 18px;border-radius:10px;cursor:pointer}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;font-size:15px;margin-top:14px}.card p+p{margin-top:8px}.card a{color:var(--ink);font-weight:700}
+.eat{margin:6px 0 0;padding:14px 16px;border:2px dashed var(--leaf2);border-radius:14px;font-size:14.5px;display:flex;align-items:center;gap:12px}
+.eat button{padding:9px 14px;font-size:13px}.empty{padding:36px 22px;text-align:center;color:var(--muted)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;justify-content:center;padding:0 12px calc(12px + env(safe-area-inset-bottom,0px));transform:translateY(130%);transition:transform .25s}.bar.show{transform:none}
+.panel{width:100%;max-width:616px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:10px;box-shadow:0 8px 26px rgba(0,0,0,.28)}
+.ot{display:flex;align-items:center;gap:6px;margin-bottom:8px}.ot small{color:var(--muted);font-size:12.5px;margin:0 4px 0 6px;font-weight:500}
+.ot button{flex:1;border:2px solid var(--line);background:var(--bg);color:var(--ink);font:500 14px Figtree,sans-serif;padding:7px 4px;border-radius:10px;cursor:pointer}
+.ot button.on{border-color:var(--leaf2);background:var(--mint);font-weight:700}
+.go{width:100%;display:flex;justify-content:space-between;border:0;background:var(--leaf);color:#F2FBEF;font:700 16px Figtree,sans-serif;padding:15px 18px;border-radius:14px;cursor:pointer}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:20;display:none}.scrim.show{display:block}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:21;max-width:640px;margin:0 auto;background:var(--bg);border-radius:22px 22px 0 0;padding:20px 22px calc(20px + env(safe-area-inset-bottom,0px));max-height:92%;overflow-y:auto;transform:translateY(105%);transition:transform .28s;visibility:hidden}
+.sheet.show{transform:none;visibility:visible}
+.sheet h3{font:700 24px 'Playfair Display',Georgia,serif;margin-bottom:8px}.sheet label{display:block;font-size:14px;color:var(--muted);margin:12px 0 4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.line{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.line .n{flex:1}.line .p{font-weight:700;min-width:56px;text-align:right}
+.total{display:flex;justify-content:space-between;font-weight:700;font-size:18px;margin:14px 0}
+.send{width:100%;border:0;background:#1FA855;color:#fff;font:700 16px Figtree,sans-serif;padding:16px;border-radius:14px;cursor:pointer;margin-top:14px}
+.note{font-size:13px;color:var(--muted);text-align:center;margin-top:10px}
+.close{float:right;border:0;background:var(--chip);color:var(--ink);width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer}
+.sheet .mode{display:flex;gap:8px;margin:12px 0 2px}.sheet .mode button{flex:1;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:500 14.5px Figtree,sans-serif;padding:10px 4px;border-radius:12px;cursor:pointer}.sheet .mode button.on{border-color:var(--leaf2);background:var(--mint);font-weight:700}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg class="leaf" viewBox="0 0 230 260" aria-hidden="true"><g fill="#2E9B58" opacity=".55"><path d="M230 0C140 10 70 70 60 170c40-10 80-40 110-90 20-30 40-50 60-80z"/></g><g fill="none" stroke="#B7E6C3" stroke-width="2" opacity=".5"><path d="M230 0C160 70 100 120 60 170"/><path d="M190 36l-38 8M168 62l-36 10M146 88l-30 14M124 114l-24 16"/></g><path d="M200 120c-60 0-110 40-120 120 50-10 95-40 120-120z" fill="#53C07B" opacity=".4"/></svg>
+  <span class="seal"><i></i>100% PURE VEG</span>
+  <h1>Hotel Purnabramha</h1>
+  <p>Fresh Konkani and family favourites. Comfortable rooms when you want to stay.</p>
+  <p class="loc">Kudal–Vengurla Road, Pinguli, Kudal</p>
+</header>
+<div class="tabs"><div class="seg" role="tablist"><button class="on" data-view="menuV" role="tab">Menu</button><button data-view="roomsV" role="tab">Rooms</button></div></div>
+
+<div class="view on" id="menuV">
+  <div class="stay"><div><b>Travelling? Stay with us.</b><span>Clean rooms, right where you eat.</span></div><button data-view="roomsV">See rooms</button></div>
+  <div class="search"><input id="q" type="search" placeholder="Search dishes, like paneer or thali" aria-label="Search dishes"></div>
+  <div class="cats" id="cats"></div>
+  <div id="list"></div>
+</div>
+
+<div class="view" id="roomsV">
+  <div class="pad"><h2>Rooms</h2><p class="sub">Rates per night. Tap Enquire and we reply on WhatsApp.</p><div id="roomList"></div>
+    <div class="eat"><span><b>Hungry?</b><br>Our pure veg kitchen is right downstairs.</span><button data-view="menuV">See menu</button></div>
+    <div class="card"><p><b>Address</b><br>Kudal–Vengurla Road, Pinguli, Kudal, Maharashtra 416528</p><p><b>Phone</b> <a href="tel:+917385294202">+91 73852 94202</a></p><p><a href="https://wa.me/917385294202">Chat on WhatsApp</a></p></div>
+  </div>
+</div>
+
+<div class="bar" id="bar"><div class="panel">
+  <div class="ot" id="ot"><small>Order type</small><button data-m="Dine in" class="on">Dine in</button><button data-m="Parcel">Parcel</button><button data-m="Room">To my room</button></div>
+  <button class="go" id="openCart"><span id="cnt"></span><span id="barTotal"></span></button>
+</div></div>
+<div class="scrim" id="scrim"></div>
+
+<div class="sheet" id="cart" role="dialog" aria-label="Your order">
+  <button class="close" data-close aria-label="Close">✕</button>
+  <h3>Your order</h3><div id="lines"></div>
+  <div class="mode" id="mode"><button data-m="Dine in" class="on">Dine in</button><button data-m="Parcel">Parcel</button><button data-m="Room">To my room</button></div>
+  <div class="two"><div><label for="nmI">Your name</label><input id="nmI" placeholder="Name"></div>
+  <div id="tblW"><label for="tbl" id="tblL">Table no.</label><input id="tbl" inputmode="numeric" placeholder="e.g. 6"></div></div>
+  <label for="pref">Preference</label><select id="pref"><option>Regular</option><option>Jain (no onion or garlic)</option><option>Less spicy</option></select>
+  <label for="cn">Note for the kitchen</label><textarea id="cn" rows="2" placeholder="Less oil, extra roti, etc."></textarea>
+  <div class="total"><span>Total</span><span id="grand"></span></div>
+  <button class="send" id="sendOrd">Send order to the kitchen</button>
+  <p class="note">Your order goes straight to our kitchen on WhatsApp. Pay at the counter.</p>
+  <div class="eat" id="upsell" style="margin-top:16px"><span><b>Need a room tonight?</b><br>Rest after your meal, rooms are right here.</span><button data-enq="">Enquire</button></div>
+</div>
+
+<div class="sheet" id="done" role="dialog" aria-label="Send on WhatsApp">
+  <button class="close" data-close aria-label="Close">✕</button>
+  <h3>Almost done</h3>
+  <p class="note" style="text-align:left;margin:0 0 12px">Tap the green button, then press Send inside WhatsApp so the kitchen receives it.</p>
+  <a class="send" id="waLink" href="#" target="_blank" rel="noopener" style="display:block;text-align:center;text-decoration:none">Open WhatsApp</a>
+  <button class="btn" id="copyBtn" style="width:100%;margin-top:10px;padding:14px">Copy order text</button>
+  <a class="btn" href="tel:+917385294202" style="display:block;text-align:center;text-decoration:none;margin-top:10px;padding:14px">Call us instead</a>
+  <textarea id="preview" rows="6" readonly style="margin-top:12px"></textarea>
+  <p class="note">If WhatsApp does not open, copy the text and send it to +91 73852 94202.</p>
+</div>
+
+<div class="sheet" id="enq" role="dialog" aria-label="Room enquiry">
+  <button class="close" data-close aria-label="Close">✕</button>
+  <h3>Room enquiry</h3>
+  <label for="en">Your name</label><input id="en" placeholder="Full name">
+  <div class="two"><div><label for="ci">Check-in</label><input id="ci" type="date"></div><div><label for="co">Check-out</label><input id="co" type="date"></div></div>
+  <div class="two"><div><label for="gu">Guests</label><select id="gu"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div><div><label for="rt">Room</label><select id="rt"></select></div></div>
+  <label for="enote">Anything else?</label><textarea id="enote" rows="2" placeholder="Late arrival, extra bed, etc."></textarea>
+  <button class="send" id="sendEnq">Send enquiry on WhatsApp</button>
+  <p class="note">This is an enquiry, not a confirmed booking. We reply with availability and final rate.</p>
+</div>
+
+<script>
+const CUR="₹",WA="917385294202",HOTEL="Hotel Purnabramha, Kudal";
+const CATS=[["chef","Chef’s Choice","Picked by our kitchen"],["bf","Breakfast","Served until late morning"],["thali","Thali & Meals","Full meals, served fresh"],["kon","Konkani Specials","Coastal home-style flavours"],["pun","Punjabi Mains","North Indian classics"],["rice","Rice & Rotis",""],["chi","Chinese","A local favourite"],["drk","Drinks & Sweets",""]];
+// [name, description, price, category, tag]  tag: chef | special
+const FOOD=[
+ ["Misal Pav","Spicy sprouts curry, farsan, two pav",70,"bf","chef"],["Poha","Light, with peanuts and lemon",40,"bf"],["Upma","Semolina with curry leaves",40,"bf"],["Sabudana Khichdi","Sago, peanuts, potato",60,"bf"],["Idli Sambar","Four idlis, sambar, chutney",55,"bf"],["Masala Dosa","Crisp dosa, potato filling",80,"bf"],["Batata Vada (2)","Hot potato fritters, chutney",40,"bf"],
+ ["Konkani Veg Thali","Amti, vegetable, usal, rice, bhakri, sol kadhi, sweet",180,"thali","chef"],["Punjabi Thali","Paneer, dal, jeera rice, roti, sweet, salad",210,"thali"],["Mini Thali","Dal, rice, vegetable, two chapati",120,"thali"],["Dal Khichdi","Comfort khichdi with ghee and papad",120,"thali"],
+ ["Ghavan with Coconut Chutney","Soft rice crepes, coconut milk",90,"kon","special"],["Pithla Bhakri","Gram flour curry, jowar bhakri",110,"kon","chef"],["Sol Kadhi","Kokum and coconut milk",40,"kon"],
+ ["Paneer Butter Masala","Creamy tomato gravy",190,"pun","chef"],["Paneer Tikka Masala","Smoky and spiced",200,"pun"],["Mix Veg","Seasonal vegetables",150,"pun"],["Dal Fry","Tempered yellow dal",110,"pun"],
+ ["Jeera Rice","Steamed rice with cumin",100,"rice"],["Tandoori Roti","",20,"rice"],["Butter Naan","",45,"rice"],
+ ["Veg Hakka Noodles","Wok-tossed, crisp vegetables",130,"chi"],["Veg Fried Rice","Light and fragrant",130,"chi"],["Veg Manchurian","Dry or gravy",140,"chi","special"],["Paneer Chilli","Indo-Chinese, spicy",180,"chi","special"],
+ ["Masala Chai","Hot, freshly brewed",20,"drk"],["Filter Coffee","",30,"drk"],["Fresh Lime Soda","Sweet or salted",40,"drk"],["Buttermilk","Chilled and spiced",30,"drk"],["Gulab Jamun (2)","Warm and syrupy",50,"drk","special"]];
+const ROOMS=[
+ ["Standard Room","#2F8F5B,#0F3E22","Double bed","Fan or cooler","Attached bath","Hot water",800],
+ ["Deluxe AC Room","#1E7A6B,#0F3E22","Queen bed","AC","TV","Wi-Fi",1500],
+ ["Family AC Room","#6B8F2F,#0F3E22","Sleeps 4","AC","Extra bed","Wi-Fi",2200]];
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cart={},count=()=>Object.values(cart).reduce((a,b)=>a+b,0),total=()=>Object.entries(cart).reduce((a,[k,v])=>a+FOOD[k][2]*v,0);let mode="Dine in";
+const TAGS={chef:"Chef’s Choice",special:"House Special"};
+function ctl(k){const n=cart[k]||0;return n?`<span class="step"><button data-a="-1" data-k="${k}" aria-label="Remove one">−</button><span>${n}</span><button data-a="1" data-k="${k}" aria-label="Add one">+</button></span>`:`<button class="add" data-a="1" data-k="${k}">Add</button>`}
+function row(f,k,hideTag){return `<div class="item"><span class="dot" title="Pure vegetarian"></span><div class="info"><div class="nm">${esc(f[0])}${f[4]&&!hideTag?`<span class="tag ${f[4]}">${TAGS[f[4]]}</span>`:""}</div>${f[1]?`<div class="ds">${esc(f[1])}</div>`:""}</div><div class="buy"><span class="pr">${CUR}${f[2]}</span><span data-k="${k}">${ctl(k)}</span></div></div>`}
+function render(term=""){term=term.trim().toLowerCase();let h="",chips="";
+  CATS.forEach(([id,t,s])=>{
+    const rows=FOOD.map((f,k)=>[f,k]).filter(([f])=>(id=="chef"?f[4]=="chef":f[3]==id)&&(!term||(f[0]+" "+f[1]).toLowerCase().includes(term)));
+    if(!rows.length)return;
+    chips+=`<button data-go="${id}">${t}</button>`;
+    h+=`<section id="${id}" class="${id=="chef"?"chef":""}"><h2>${t}</h2>${s?`<p class="sub">${s}</p>`:""}${rows.map(([f,k])=>row(f,k,id=="chef")).join("")}</section>`;});
+  $("list").innerHTML=h||`<p class="empty">Nothing matches “${esc(term)}”. Try “paneer” or “thali”.</p>`;
+  $("cats").innerHTML=chips;const f=$("cats").firstChild;if(f)f.classList.add("on");}
+$("roomList").innerHTML=ROOMS.map((r,i)=>`<div class="room"><div class="pic" style="background:linear-gradient(135deg,${r[1].split(",")[0]},${r[1].split(",")[1]})">${r[2]}</div><div class="rb"><h3>${r[0]}</h3><div class="am">${r.slice(3,6).map(a=>`<span>${a}</span>`).join("")}</div><div class="rrow"><div class="rate">${CUR}${r[6].toLocaleString("en-IN")} <small>/ night</small></div><button class="btn" data-enq="${i}">Enquire</button></div></div></div>`).join("");
+$("rt").innerHTML=ROOMS.map((r,i)=>`<option value="${i}">${r[0]}</option>`).join("");
+function show(v){["menuV","roomsV"].forEach(x=>$(x).classList.toggle("on",x===v));document.querySelectorAll(".seg button").forEach(b=>b.classList.toggle("on",b.dataset.view===v));scrollTo({top:0,behavior:"smooth"});}
+function setMode(m){mode=m;document.querySelectorAll("#ot button,#mode button").forEach(b=>b.classList.toggle("on",b.dataset.m===m));
+  $("tblW").style.visibility=m=="Parcel"?"hidden":"visible";$("tblL").textContent=m=="Room"?"Room no.":"Table no.";$("tbl").placeholder=m=="Room"?"e.g. 204":"e.g. 6";$("upsell").style.display=m=="Room"?"none":"flex";}
+function refresh(){const n=count();$("bar").classList.toggle("show",n>0&&!$("cart").classList.contains("show")&&!$("enq").classList.contains("show"));
+  $("cnt").textContent=`View order · ${n} ${n==1?"item":"items"}`;$("barTotal").textContent=CUR+total();
+  $("lines").innerHTML=Object.entries(cart).map(([k,v])=>`<div class="line"><span class="n">${esc(FOOD[k][0])}</span><span class="step"><button data-a="-1" data-k="${k}" aria-label="Remove one">−</button><span>${v}</span><button data-a="1" data-k="${k}" aria-label="Add one">+</button></span><span class="p">${CUR}${FOOD[k][2]*v}</span></div>`).join("");
+  $("grand").textContent=CUR+total();if(!n&&$("cart").classList.contains("show"))open(null);}
+function change(k,d){cart[k]=Math.max(0,(cart[k]||0)+d);if(!cart[k])delete cart[k];document.querySelectorAll(`#list span[data-k="${k}"]`).forEach(e=>e.innerHTML=ctl(k));refresh();}
+function open(id){["cart","enq","done"].forEach(s=>$(s).classList.toggle("show",s===id));$("scrim").classList.toggle("show",!!id);refresh();}
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.a)return change(b.dataset.k,+b.dataset.a);
+  if(b.dataset.m)return setMode(b.dataset.m);
+  if(b.dataset.enq!==undefined){if(b.dataset.enq!=="")$("rt").value=b.dataset.enq;return open("enq");}
+  if(b.dataset.view){open(null);return show(b.dataset.view);}
+  if(b.dataset.go){const el=$(b.dataset.go);if(el)el.scrollIntoView({behavior:"smooth"});return;}
+  if(b.hasAttribute("data-close"))open(null);});
+$("scrim").onclick=()=>open(null);$("openCart").onclick=()=>open("cart");$("q").addEventListener("input",()=>render($("q").value));
+addEventListener("scroll",()=>{if(!$("menuV").classList.contains("on"))return;let cur=null;CATS.forEach(([id])=>{const el=$(id);if(el&&el.getBoundingClientRect().top<150)cur=id});
+  if(cur)[...$("cats").children].forEach(b=>b.classList.toggle("on",b.dataset.go===cur));},{passive:true});
+const wa=t=>{$("waLink").href=`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;$("preview").value=t;open("done");};
+$("copyBtn").onclick=()=>{const p=$("preview");p.select();let ok=false;try{ok=document.execCommand("copy")}catch(e){}
+  if(!ok&&navigator.clipboard)navigator.clipboard.writeText(p.value).catch(()=>{});$("copyBtn").textContent="Copied. Now paste it in WhatsApp";};
+$("sendOrd").onclick=()=>{const loc=$("tbl").value.trim();
+  if(mode=="Room"&&!loc){$("tbl").focus();return;}
+  const type=mode=="Room"?"Deliver to room"+(loc?" "+loc:""):mode=="Dine in"?"Dine in"+(loc?" · Table "+loc:""):"Parcel";
+  let t=`*New order – ${HOTEL}*\nOrder type: ${type}${$("nmI").value.trim()?"\nName: "+$("nmI").value.trim():""}\n\n`;
+  t+=Object.entries(cart).map(([k,v])=>`${v} x ${FOOD[k][0]} – ${CUR}${FOOD[k][2]*v}`).join("\n")+`\n\nPreference: ${$("pref").value}${$("cn").value.trim()?"\nNote: "+$("cn").value.trim():""}\n*Total: ${CUR}${total()}*`;wa(t);};
+$("sendEnq").onclick=()=>{const n=$("en").value.trim();if(!n){$("en").focus();return;}
+  wa(`*Room enquiry – ${HOTEL}*\nName: ${n}\nRoom: ${ROOMS[$("rt").value][0]}\nCheck-in: ${$("ci").value||"to be decided"}\nCheck-out: ${$("co").value||"to be decided"}\nGuests: ${$("gu").value}${$("enote").value.trim()?"\nNote: "+$("enote").value.trim():""}`);};
+render();setMode("Dine in");refresh();
+</script>
+</body>
+</html>
